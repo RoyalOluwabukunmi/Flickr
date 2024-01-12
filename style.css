@@ -1,0 +1,64 @@
+@media screen and (max-width:478px) {
+    
+    #img-flickr {
+    }
+    
+    #form {
+        display: none;
+    }
+
+    #signup {
+        display: none;
+    }
+
+    #login {
+        border: 1px solid white;
+    }
+
+    #header{
+        justify-content: space-between;
+    }
+
+    #carousel {
+        height: 700px;
+    }
+
+    #carousel-text {
+        transform: translate(0px,-170px);
+        height: 500px;
+        row-gap: 20px;
+    }
+
+    #footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* border: 1px solid red; */
+        height: 900px !important;
+    }
+
+    #li1 {
+        /* border: 1px solid red; */
+        height: 30px;
+        width: 400px;
+    }
+
+    #ad {
+        color: white;
+        text-align: center;
+    }
+
+    #li2 {
+        /* border: 1px solid red; */
+        transform: translate(-40px,80px);
+
+
+    }
+}
+
+@media screen and (max-width :1194px) {
+    #carousel {
+        height: 1200px;
+    }
+}

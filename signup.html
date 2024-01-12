@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flickr signup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <style>
+        #transform {
+            /* border: 1px solid red !important; */
+            transform: translate(90px, 0px);
+        }
+
+        #shift {
+            /* border: 1px solid gold !important; */
+            transform: translate(-10px, -70px);
+
+        }
+
+        @media screen and (max-width:478px) {
+            #transform {
+                display: none;
+            }
+
+            #div {
+                height: 87vh !important;
+                width: 150vw !important;
+                position: absolute;
+                top: 50px;
+                right: 5px;
+
+            }
+
+            #bg-image {
+                display: none;
+            }
+
+            #floatingInput {
+                border: 1px solid black;
+            }
+
+            #floatingPassword {
+                border: 1px solid black;
+            }
+
+            #move {
+                /* border: 1px solid red !important; */
+                transform: translate(20px, 0px);
+
+            }
+
+            #shift {
+                /* border: 1px solid gold !important; */
+                transform: translate(-5px, 20px);
+
+            }
+
+            #img-flickr {
+                position:absolute;
+                height: 40px;
+                /* border: 1px solid red !important; */
+                /* display: none; */
+                
+            
+
+            }
+
+            #lap {
+                border: 1px solid green !important;
+                display: none;
+
+            }
+
+            #nav{
+                position: absolute;
+                width: 410px !important;
+                /* display: none; */
+            }
+        }
+    
+        @media screen and (width: 1024px) {
+            #bg-image{
+            width: 1270px !important;
+            }
+        }
+    
+
+        @media screen and (width: 1280px) {
+            #img-flickr {
+                
+                /* border: 1px solid red; */
+                width: 1280px !important;
+    
+            }
+        }
+
+        @media screen and (width: 768px) {
+            #nav {
+                border: 1px solid green;
+                width: 10px !important;
+
+            }
+
+            #img-flickr {
+                /* border: 1px solid red; */
+                width: 770px !important;
+
+            }
+        }
+
+        
+        @media screen and (width:1440px) {
+            #nav {
+                /* border: 1px solid green; */
+                width: 10px !important;
+                /* display: none; */
+            }
+
+            #img-flickr {
+                /* border: 1px solid red; */
+                width: 1440px !important;
+
+            }
+
+            #shift {
+                /* border: 1px solid red; */
+                transform: translate(200px,30px);
+            }
+
+            #ss {
+                /* border: 1px solid green; */
+                transform: translate(-50px,30px);
+            }
+
+            #div {
+                /* border: 1px solid yellow; */
+                transform: translate(-50px, 0px) !important;
+            }
+        }
+    </style>
+</head>
+
+<!-- <nav class="">
+    <div id="img-flickr" class="col-md-3 mb-1 mb-md-0 d-lg-none d-md-none  position-fixed fixed-top bg-dark">
+        <img style=" width: 90px; height: 40px; transform: translateX(20px);"
+            src="images/www_flickr_com/flickr3.png" alt="yufyfui">
+    </div>
+</nav> -->
+<body style="padding: 0px; margin: 0px;">
+    <div id="transform" class="container  d-sm-none col-xl-10 col-xxl-8 px-4 py-5 position-absolute ">
+        <div class="row align-items-center   g-lg-5 py-5">
+            <div class="col-md-10 mx-auto align-content-center  col-lg-5">
+                <form class="p-4 p-md-5  rounded-3 bg-white">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Email address">
+                        <label for="floatingInput">First name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Last name</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Your age</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Email address</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">password</label>
+                    </div>
+
+
+                    <div class="form-check text-start my-3">
+                        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Remember me
+                        </label>
+                    </div>
+
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button> <br> <br>
+                    <div class=" col-7 m-auto my-2 text-center">
+                        <p>By signing up, you agree with Flickr's <a class="text-decoration-none" href=""> Terms of Services</a> and <a class="text-decoration-none" href="">Privacy Policy.</a> </p>
+                    </div>
+                    <hr class="my-4">
+                    <div class="container d-flex text-center ">
+                        <p class="">Not a Flickr member? </p>
+                        <a class="text-decoration-none px-2" target="_blank" href="signup.html">sign up here</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <nav id="nav" class="" style="transform: translate(-10px,px); width: 1270px ;">
+        <div id="img-flickr" class="col-md-3 mb-1 mb-md-0 w-100   bg-dark">
+            <img style=" width: 90px; height: 40px; transform: translateX(20px);"
+                src="images/www_flickr_com/flickr3.png" alt="">
+        </div>
+    </nav>
+    <div id="shift" class="container col-xl-10 col-xxl-8 px-4 py-5 position-absolute ">
+        <div id="ss" class="row align-items-center  g-lg-5 py-5">
+            <div id="div" class="col-md-10 mx-auto align-content-center  col-lg-5">
+                <form id="form" class="p-1 p-md-5  rounded-3 bg-white">
+                    <div class=" col-6 m-auto text-center">
+                        <img src="images/www_flickr_com/flickr2-removebg-preview.png" alt="">
+                        <p>Log in to Flickr</p>
+                    </div> <br>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Email address">
+                        <label for="floatingInput">First name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Last name</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Your age</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Email address</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">password</label>
+                    </div>
+
+
+                    <div class="form-check text-start my-3">
+                        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Remember email address
+                        </label>
+                    </div>
+
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button> <br><br>
+                    <div class=" col-12 text-center m-auto my-2 text-center">
+                        <p>By signing up, you agree with Flickr's <a class="text-decoration-none" href="https://www.flickr.com/help/terms"> Terms of Services</a> and <a class="text-decoration-none" href="https://www.flickr.com/help/privacy">Privacy Policy.</a> </p>
+                    </div>
+                    <hr class="my-4">
+                    <div id="move" class="container-fluid d-flex py-1">
+                        <p class="">Already a Flickr member? 
+                            <a class="text-decoration-none" target="_blank" style="height: 49px;" href="login.html">log in here</a> </p>
+                        
+                    </div>
+                </form>
+
+                <div class=" my-2 justify-content-evenly">
+                    <nav id="lap" class="navbar navbar-expand-lg ">
+                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav col-12 justify-content-lg-between ">
+                                <li class="nav-item dropdown">
+                                    <div class="dropdown-toggle text-white" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        English
+                                    </div>
+                                    <ul class="dropdown-menu dropdown-menu-white">
+                                        <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                                        <li><a class="dropdown-item" href="#">Español</a></li>
+                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                    </ul>
+                                </li>
+                                <div class=" mx-5 ">
+                                    <a class="text-decoration-none text-white" href="https://www.flickrhelp.com/hc/en-us">
+                                        help
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="https://www.flickr.com/help/privacy">
+                                        Privacy
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="https://www.flickr.com/help/terms">
+                                        Term
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="d-lg-none d-md-none" style="position: relative; top: 100px; height: 30px;">
+                    <!-- <nav  class="navbar navbar-expand-lg "> -->
+                        <!-- <div class="collapse navbar-collapse" id="navbarNavDarkDropdown"> -->
+                            <ul class="navbar-nav col-12 justify-content-lg-between ">
+                                <li class="nav-item dropdown">
+                                    <div class="dropdown-toggle text-black col-5"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        English
+                                    </div>
+                                    <ul class="dropdown-menu dropdown-menu-white">
+                                        <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                                        <li><a class="dropdown-item" href="#">Español</a></li>
+                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                    </ul>
+                                </li>
+                                <div style="transform: translate(170px,-24px);" class="mx-5 col-5 ">
+                                    <a class="text-decoration-none text-black" href="">
+                                        help
+                                    </a>
+                                    <a class="text-decoration-none text-black" href="">
+                                        Privacy
+                                    </a>
+                                    <a class="text-decoration-none text-black" href="">
+                                        Terms
+                                    </a>
+                                </div>
+                            </ul> 
+                        <!-- </div> -->
+                    <!-- </nav> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <img id="bg-image" style="height:150vh; width: 100vw;" class="" src="images/www_flickr_com/background img.jpg"
+        alt="">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
